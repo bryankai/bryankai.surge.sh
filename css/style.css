@@ -1,0 +1,26 @@
+.row .card.horizontal.extraMargin {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Not working.  Not sure why. */
+.row .aboutMe{
+  text-align: center;
+}
+
+main {
+  padding-left: 220px
+}
+
+#topBanner {
+  padding-top: 30vh;
+  height: 100vh;
+}
+
+#projects {
+    height: 100vh;
+}
+
+#contactMe {
+      height: 100vh;
+}

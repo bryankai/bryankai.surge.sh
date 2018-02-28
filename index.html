@@ -6,66 +6,136 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-
+  <!-- INITIALIZING SCRIPTS -->
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
-<!--NAV BAR-->
-  <nav class="light-blue lighten-1" role="navigation">
+  <script type="text/javascript" src="js/bryan.js"></script>
+
+  <!--NAV BAR-->
+  <!-- <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">BRYAN KAI</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact Me</a></li>
       </ul>
-
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Sidebar Link</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-  </nav>
-  <ul id="slide-out" class="side-nav">
-     <li><div class="user-view">
-       <div class="background">
-         <img src="images/office.jpg">
-       </div>
-       <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-       <a href="#!name"><span class="white-text name">John Doe</span></a>
-       <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-     </div></li>
-     <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-     <li><a href="#!">Second Link</a></li>
-     <li><div class="divider"></div></li>
-     <li><a class="subheader">Subheader</a></li>
-     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-   </ul>
-   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  </nav> -->
 
-   <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+  <!-- SIDE BAR -->
+  <div>
+    <ul class="side-nav fixed">
+      <li>
+        <div class="user-view light-green lighten-2">
+          <a href="#!user"><img class="square" src="images/Kai.jpg" width="100px"></a>
+          <a href="#!name"><span class="white-text name">Bryan Kai</span></a>
+          <a href="#!email"><span class="white-text email">brykai123@gmail.com</span></a>
+        </div>
+      </li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link </a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
 
-   <div class="col s12 m7">
-   <h2 class="header">Projects</h2>
-   <div class="card horizontal">
-     <div class="card-image">
-       <img src="https://lorempixel.com/100/190/nature/6">
-     </div>
-     <div class="card-stacked">
-       <div class="card-content">
-         <p>I am a very simple card. I am good at containing small bits of information.</p>
-       </div>
-       <div class="card-action">
-         <a href="#">This is a link</a>
-       </div>
-     </div>
-   </div>
- </div>
+<!-- MAIN CONTENT -->
+  <main>
+    <!-- INTRO -->
+    <div class='container-fluid blue-grey lighten-4' id='topBanner'>
+      <div class="row">
+        <div class='col offset-s2 m6 l6 aboutMe' id='aboutMe'>
+          <h4 class="right-align">Hi, I'm Bryan.<br>
+          I'm a Web Developement student at Galvanize.
+          Test.
+        </h4>
+        </div>
+        <div class='col s6 m6 l4 '>
+          <img class="circle" src="images/BryanKai_square.png" width="80%">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- PROJECTS -->
+    <div class="orange lighten-3 row" id="projects">
+      <div class="header col s12 m12 l12 xl12">
+        <h2 class="header">Projects</h2>
+      </div>
+
+      <!-- HORIZONTAL CARDS -->
+      <div class="row">
+        <div class="card horizontal col s10 offset-m1 m4">
+          <div class="card-image">
+            <img src="https://lorempixel.com/100/190/nature/6">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>I created an awesome project. This is what the project does. It is great!</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="card horizontal col s10 offset-m1 m4">
+          <div class="card-image">
+            <img src="https://lorempixel.com/100/190/nature/6">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>I created an awesome project. This is what the project does. It is great!</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT ME -->
+    <div class="row blue-grey lighten-3" id="contactMe">
+      <div class="ContactMe">
+        <h2 class="header">Contact Me</h2>
+        <div class="col m3">
+          <!-- SAMPLE RED BUTTON -->
+          <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="col m3">
+          <!-- SAMPLE RED BUTTON -->
+          <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="col m3">
+          <!-- SAMPLE RED BUTTON -->
+          <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+
+
+      </div>
+  </main>
+
 
 </body>
 
